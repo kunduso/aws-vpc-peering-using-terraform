@@ -5,12 +5,12 @@ variable "region" {
   default     = "us-east-2"
 }
 variable "owner_vpc_id" {
-  description = "$(owner_vpc_description)"
-  default     = "$(owner_vpc_id)"
+  description = "vpc id of the peering owner"
+  default     = ""
 }
 variable "accepter_vpc_id" {
-  description = "$(accepter_vpc_description)"
-  default     = "$(accepter_vpc_id)"
+  description = "vpc id of the peering accepter"
+  default     = ""
 }
 #Define IAM User Access Key
 variable "access_key" {
